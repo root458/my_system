@@ -1,0 +1,36 @@
+name: my_system
+description: A Flutter plugin providing information about the current platform including applications installed on the device.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: my_system_android
+      ios:
+        default_package: my_system_ios
+      web:
+        default_package: my_system_web
+
+dependencies:
+  flutter:
+    sdk: flutter
+  my_system_android:
+    path: ../my_system_android
+  my_system_ios:
+    path: ../my_system_ios
+  my_system_platform_interface:
+    path: ../my_system_platform_interface
+  my_system_web:
+    path: ../my_system_web
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  plugin_platform_interface: ^2.1.8
+  very_good_analysis: ^6.0.0

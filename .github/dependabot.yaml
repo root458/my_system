@@ -1,0 +1,43 @@
+version: 2
+enable-beta-ecosystems: true
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system/example"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system_platform_interface"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system_android"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system_ios"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system_linux"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system_macos"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system_web"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/my_system_windows"
+    schedule:
+      interval: "daily"

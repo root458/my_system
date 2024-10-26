@@ -1,0 +1,28 @@
+name: my_system_web
+description: Web implementation of the my_system plugin
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+flutter:
+  plugin:
+    implements: my_system
+    platforms:
+      web:
+        pluginClass: MySystemWeb
+        fileName: my_system_web.dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  my_system_platform_interface:
+    path: ../my_system_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
